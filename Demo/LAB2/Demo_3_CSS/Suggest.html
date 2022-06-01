@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        padding: 0 0 0 0;
+      }
+      h1 {
+        /* margin: 10px 0 15px 0; */
+        color: #ffffff;
+        text-align: center;
+      }
+      h2 {
+        margin: 10px 0 20px 0;
+        text-align: center;
+      }
+      h3 {
+        margin: 15px 0 15px 0;
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 3px;
+      }
+      ul {
+        padding: 0 0 0 50px;
+      }
+      ol {
+        padding: 0 0 0 50px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .nav {
+        padding-left: 0;
+        text-align: center;
+      }
+      .nav a {
+        color: #0000af;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        text-decoration: underline;
+        color: darkred;
+      }
+      .nav li {
+        display: inline;
+        margin: 10px;
+      }
+      .header {
+        padding: 10px 10px 10px 10px;
+        background-color: #b56663;
+      }
+      .header a {
+        color: #ffffff;
+      }
+      label,
+      input {
+        display: block;
+      }
+      label {
+        margin-bottom: 10px;
+      }
+      input {
+        width: 500px;
+        margin-bottom: 25px;
+      }
+      textarea {
+        width: 500px;
+        height: 200px;
+        padding: 7px;
+        border: 2px solid #7facaa;
+        margin-bottom: 25px;
+        font-size: 24px;
+      }
+
+      input[type='submit'] {
+        font-size: 20px;
+        align-items: center;
+        padding: 7px;
+      }
+      input[type='text'] {
+        border: 2px solid #7facaa;
+        font-size: 24px;
+        padding: 7px;
+        border-radius: 5px;
+      }
+
+      input[type='checkbox'],
+      label[for='get-newsletter'] {
+        display: inline;
+        width: 24px;
+      }
+      .main-content {
+        width: 500px;
+        margin: 20px auto 20px auto;
+      }
+      .main-content h1 {
+        text-align: center;
+      }
+    </style>
+    <title>Suggest</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Recipe World</h1>
+      <ul class="nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="Recipe.html">Recipes</a>
+        </li>
+        <li>
+          <a href="Suggest.html">Suggest</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <h2>Suggest</h2>
+      <form onsubmit="alert('You click submit Recipe')">
+        <label for="recipe-name">Recipe Name</label>
+        <input id="recipe-name" type="text" />
+        <label for="ingredients">Ingredients</label>
+        <textarea id="ingredients"></textarea>
+        <label for="your-name">Yours Name</label>
+        <input id="your-name" type="text" />
+        <label for="email">Yours Email</label>
+        <input id="email" type="text" />
+        <label for="get-newsletter">Get Newsletter ?</label>
+        <input id="get-newsletter" type="checkbox" />
+        <input type="submit" title="Submit the recipe" value="Submit Recipe" />
+      </form>
+    </div>
+  </body>
+</html>

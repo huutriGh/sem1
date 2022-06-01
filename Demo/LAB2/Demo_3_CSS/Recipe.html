@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .recipes img {
+        float: left;
+        padding-right: 10px;
+      }
+      .recipes li {
+        display: block;
+        margin: 10px;
+        clear: both;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <!--
+        Page title: Recipe World
+        Recipe Name: Simple White Cake
+        Section Name: Ingredients
+        Section Name: Directions
+        Reference: https://www.allrecipes.com/recipe/17481/simple-white-cake/
+    -->
+  <body>
+    <!--Use heading tag to define your content hierarchy-->
+    <!--
+        The page title/company name goes in the <h1>
+        The page main subject goes in the <h2>  
+        <h3> through <h6> are used to organize other divisions of page content
+    -->
+    <div class="header">
+      <h1>Recipe World</h1>
+      <ul class="nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="Simple_White_Cake.html">Recipes</a>
+        </li>
+        <li>
+          <a href="Suggest.html">Suggest</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <h2>Recipe</h2>
+      <!--
+        Use an ordered list to show list items in a certain order
+        If the content in your list does refer to steps to be followed, use an ordered list.
+      -->
+      <ul class="recipes">
+        <li>
+          <img src="images/image.webp" width="150px" height="150px" />
+          <h3><a href="Simple_White_Cake.html">Simple White Cake</a></h3>
+          <p>It is the simplest, best-tasting cake I've ever made.</p>
+        </li>
+        <li>
+          <img src="images/magic.jpeg" width="150px" height="150px" />
+          <h3><a href="Simple_White_Cake.html">Magic Cake</a></h3>
+          <p>White cake with a custard-like middle</p>
+        </li>
+        <li>
+          <img src="images/image.webp" width="150px" height="150px" />
+          <h3><a href="Simple_White_Cake.html">Fudge Layer Cake</a></h3>
+          <p>This decadent cake is creamy-smooth and buttery.</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

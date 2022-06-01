@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Out</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-areas:
+          "head head"
+          "nav nav"
+          "main aside"
+          "footer footer";
+        width: 100%;
+
+        grid-template-rows: 100px auto auto 100px;
+        grid-template-columns: 1fr 250px;
+      }
+      .container header {
+        grid-area: head;
+        background-color: #8ca0ff;
+      }
+      .container nav {
+        grid-area: nav;
+        background-color: #ffa08c;
+        height: 100px;
+      }
+      .container main {
+        grid-area: main;
+        height: 400px;
+        background-color: #ffff64;
+      }
+      .container aside {
+        grid-area: aside;
+        background-color: orangered;
+        height: 400px;
+      }
+      .container footer {
+        grid-area: footer;
+        background-color: #8cffa0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <header>HEADER</header>
+      <nav>NAVIGATION</nav>
+      <aside>ASIDE</aside>
+      <main>MAIN</main>
+      <footer>FOOTER</footer>
+    </section>
+  </body>
+</html>
